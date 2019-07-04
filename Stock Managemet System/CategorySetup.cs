@@ -14,14 +14,14 @@ using SMS.Bll;
 
 namespace SMS
 {
-    public partial class SMS : Form
+    public partial class CategorySetup : Form
     {
 
 
         CategorySetupManager _categorySetupManager = new CategorySetupManager();
         Category category= new Category();
         
-        public SMS()
+        public CategorySetup()
         {
             InitializeComponent();
            

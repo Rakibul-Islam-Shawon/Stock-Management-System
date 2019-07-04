@@ -16,7 +16,9 @@ namespace SMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SMS());
+            Application.Run(new CategorySetup());
+            Application.Run(new CompanySetup());
+
         }
     }
 }
