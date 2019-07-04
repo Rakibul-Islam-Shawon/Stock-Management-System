@@ -12,19 +12,27 @@ namespace SMS
 {
     public partial class Index : Form
     {
+        CategorySetup _categorySetup;
+        CompanySetup _companySetup;
         public Index()
         {
             InitializeComponent();
+            _categorySetup = new CategorySetup();
+            _companySetup = new CompanySetup();
         }
 
-        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+        public object CategorySetup { get; private set; }
 
+        private void CategoryLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Show();
+            _categorySetup.Show();
         }
 
-        private void Index_Load(object sender, EventArgs e)
+        private void CompanyLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            this.Show();
+            _companySetup.Show();
         }
     }
 }
